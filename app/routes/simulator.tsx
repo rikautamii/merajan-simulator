@@ -177,7 +177,30 @@ export default function Simulator() {
               </select>
             </div>
 
-            <div className="flex flex-col md:flex-row items-center gap-4">
+            <div className="flex flex-col md:flex-row items-start gap-2 md:gap-4">
+              <label
+                htmlFor="alengkat"
+                className="md:w-1/3 text-[#313130] font-medium text-left"
+              >
+                Panjang Ujung Telunjuk Sampai Ujung Ibu Jari (cm)
+              </label>
+              <div className="w-full md:w-2/3 flex flex-col">
+                <input
+                  type="number"
+                  name="alengkat"
+                  id="alengkat"
+                  onChange={(e) => setAlengkat(parseFloat(e.target.value))}
+                  className="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-[#F5C17C]"
+                  required
+                />
+                <span className="text-sm text-[#5A5A5A] mt-1">
+                  Rata-rata panjangnya sekitar 20 cm pada orang dewasa.
+                </span>
+              </div>
+            </div>
+
+
+            {/* <div className="flex flex-col md:flex-row items-center gap-4">
               <label htmlFor="alengkat" className="md:w-1/3 text-[#313130] font-medium text-left">
                 Panjang Ujung Telunjuk Sampai Ujung Ibu Jari (cm)
               </label>
@@ -191,9 +214,31 @@ export default function Simulator() {
                 className="w-full md:w-2/3 px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-[#F5C17C]"
                 required
               />
+            </div> */}
+
+            <div className="flex flex-col md:flex-row items-start gap-2 md:gap-4">
+              <label
+                htmlFor="atebah"
+                className="md:w-1/3 text-[#313130] font-medium text-left"
+              >
+                Lebar Telapak Tangan (cm)
+              </label>
+              <div className="w-full md:w-2/3 flex flex-col">
+                <input
+                  type="number"
+                  name="atebah"
+                  id="atebah"
+                  onChange={(e) => setAtebah(parseFloat(e.target.value))}
+                  className="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-[#F5C17C]"
+                />
+                <span className="text-sm text-[#5A5A5A] mt-1">
+                  Lebar telapak tangan manusia rata-rata 8 cm.
+                </span>
+              </div>
             </div>
 
-            <div className="flex flex-col md:flex-row items-center gap-4">
+
+            {/* <div className="flex flex-col md:flex-row items-center gap-4">
               <label htmlFor="atebah" className="md:w-1/3 text-[#313130] font-medium text-left">
                 Lebar Telapak Tangan (cm)
               </label>
@@ -206,9 +251,12 @@ export default function Simulator() {
                 onChange={(e) => setAtebah(parseFloat(e.target.value))}
                 className="w-full md:w-2/3 px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-[#F5C17C]"
               />
-            </div>
+              <span className="text-sm text-[#5A5A5A] mt-1">
+                Lebar telapak tangan manusia rata-rata 8 cm.
+              </span>
+            </div> */}
 
-            <div className="flex flex-col md:flex-row items-center gap-4">
+            {/* <div className="flex flex-col md:flex-row items-center gap-4">
               <label htmlFor="panjang" className="md:w-1/3 text-[#313130] font-medium text-left">
                 Panjang Lahan Merajan (m)
               </label>
@@ -221,9 +269,53 @@ export default function Simulator() {
                 onChange={(e) => setPanjang(parseFloat(e.target.value))}
                 className="w-full md:w-2/3 px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-[#F5C17C]"
               />
+            </div> */}
+
+            <div className="flex flex-col md:flex-row items-start gap-2 md:gap-4">
+              <label
+                htmlFor="panjang"
+                className="md:w-1/3 text-[#313130] font-medium text-left"
+              >
+                Panjang Lahan Merajan (m)
+              </label>
+              <div className="w-full md:w-2/3 flex flex-col">
+                <input
+                  type="number"
+                  name="panjang"
+                  id="panjang"
+                  onChange={(e) => setPanjang(parseFloat(e.target.value))}
+                  className="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-[#F5C17C]"
+                />
+                <span className="text-sm text-[#5A5A5A] mt-1">
+                  Minimal panjang lahan adalah 6 atau 7 meter.
+                </span>
+              </div>
             </div>
 
-            <div className="flex flex-col md:flex-row items-center gap-4">
+            <div className="flex flex-col md:flex-row items-start gap-2 md:gap-4">
+              <label
+                htmlFor="lebar"
+                className="md:w-1/3 text-[#313130] font-medium text-left"
+              >
+                Lebar Lahan Merajan (m)
+              </label>
+              <div className="w-full md:w-2/3 flex flex-col">
+                <input
+                  type="number"
+                  name="lebar"
+                  id="lebar"
+                  onChange={(e) => setLebar(parseFloat(e.target.value))}
+                  className="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-[#F5C17C]"
+                />
+                <span className="text-sm text-[#5A5A5A] mt-1">
+                  Minimal lebar lahan adalah 6 atau 7 meter.
+                </span>
+              </div>
+            </div>
+
+
+
+            {/* <div className="flex flex-col md:flex-row items-center gap-4">
               <label htmlFor="lebar" className="md:w-1/3 text-[#313130] font-medium text-left">
                 Lebar Lahan Merajan (m)
               </label>
@@ -236,7 +328,7 @@ export default function Simulator() {
                 onChange={(e) => setLebar(parseFloat(e.target.value))}
                 className="w-full md:w-2/3 px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-[#F5C17C]"
               />
-            </div>
+            </div> */}
 
             {landArea !== null && (
               <p className="text-lg font-semibold text-[#313130]">
