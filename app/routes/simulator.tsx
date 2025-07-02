@@ -284,7 +284,7 @@ export default function Simulator() {
                   className="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-[#F5C17C]"
                 />
                 <span className="text-sm text-[#5A5A5A] mt-1">
-                  Minimal panjang lahan adalah 6 atau 7 meter.
+                  Minimal panjang lahan adalah 6 atau 7 meter. Selisih panjang dan lebar disarankan tidak lebih dari 1 meter.
                 </span>
               </div>
             </div>
@@ -305,7 +305,7 @@ export default function Simulator() {
                   className="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-[#F5C17C]"
                 />
                 <span className="text-sm text-[#5A5A5A] mt-1">
-                  Minimal lebar lahan adalah 6 atau 7 meter.
+                  Minimal lebar lahan adalah 6 atau 7 meter. Selisih panjang dan lebar disarankan tidak lebih dari 1 meter.
                 </span>
               </div>
             </div>
