@@ -91,7 +91,7 @@ export default function Simulator() {
     // };
 
     const response = await fetch(
-      "https://merajan-simulator-api.vercel.app/buildingLocation",
+      "https://merajan-simulator-api.vercel.app/api/buildingLocation",
       {
         method: "POST",
         body: JSON.stringify(fields),
