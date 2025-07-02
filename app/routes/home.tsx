@@ -1,108 +1,83 @@
-import type { Route } from "./+types/home";
-
-export function meta({}: Route.MetaArgs) {
-  return [{ title: "Asta Kosali Kosali" }];
-}
-
 export default function Home() {
   return (
-    <div>
-      <header className="flex justify-between items-center px-8 py-4 bg-[#F2EDE5]">
+    <div className="font-sans">
+      {/* Header */}
+      <header className="flex justify-between items-center px-12 py-4 bg-[#6C483A]">
         <div className="flex items-center gap-4">
-          <img src="logo.png" alt="Logo" className="w-10" />
-          <h1 className="text-xl font-bold text-primary">ASTA KOSALA KOSALI</h1>
+          <img src="logo1.png" alt="Logo" className="w-12" />
+          <div className="text-white leading-tight">
+            <h1 className="text-lg font-bold">ASTA KOSALA KOSALI</h1>
+            <p className="text-sm tracking-widest">MERAJAN SIMULATOR</p>
+          </div>
         </div>
-        <nav className="flex gap-4">
-          <a href="#" className="text-primary">
-            Home
-          </a>
-          <a href="#" className="text-primary">
-            About
-          </a>
-          <a href="#" className="text-primary">
-            FAQ
-          </a>
-          <a href="#" className="px-4 py-2 bg-secondary text-white rounded">
-            Login
-          </a>
-          <a href="#" className="px-4 py-2 bg-primary text-white rounded">
-            Register
-          </a>
+        <nav className="flex gap-8 text-[#F2EDE5] font-medium">
+          {/* <a href="#">Home</a> */}
+          <a href="#tentang">Tentang</a>
+          <a href="#faq">FAQ</a>
+          <a href="/simulator">Simulator</a>
         </nav>
       </header>
 
-      <main className="px-8 py-4">
-        <section className="mb-8">
-          <h2 className="text-3xl font-bold text-primary mb-4">
-            Bali Building Simulator
-          </h2>
-          <p className="text-gray-600 mb-4">
-            Use our simulator to design your traditional Balinese house easily
-            and quickly!
-          </p>
+      {/* Hero / About */}
+      <main className="px-12 py-12 text-[#313130]">
+        <section id="tentang" className="flex flex-col md:flex-row items-center justify-between gap-12 mb-16">
+          <div className="flex flex-col items-center justify-center text-center md:w-1/2 space-y-4">
+            <img src="logo1.png" alt="Logo Merajan" className="w-32 mx-auto md:mx-0 mb-4" />
+            <h2 className="text-3xl font-bold mb-2">ASTA KOSALA KOSALI</h2>
+            <p className="text-sm mb-6 tracking-widest">MERAJAN SIMULATOR</p>
+            <a
+              href="/simulator"
+              className="inline-block px-6 py-3 bg-[#F5C17C] hover:bg-[#e6af63] text-[#313130] font-bold rounded-lg transition"
+            >
+              COBA SEKARANG!
+            </a>
+          </div>
+
+          <div className="md:w-1/2 text-[#313130] text-justify">
+            <h3 className="text-xl font-bold mb-2 text-center md:text-left">TENTANG</h3>
+            <p className="text-base leading-relaxed">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+              in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+          </div>
         </section>
 
-        <section className="px-6 py-8 rounded-lg shadow-md bg-[#F2EDE5]">
-          <h2 className="text-2xl font-bold text-primary mb-4">
-            About Bali Building Simulator
-          </h2>
-          <p className="text-gray-600">
-            This simulator is designed to help you create a traditional Balinese
-            house design that is in accordance with the Asta Kosala Kosali
-            philosophy.
-          </p>
-        </section>
-
-        <section className="mt-8">
-          <h2 className="text-2xl font-bold text-primary mb-4">
-            Frequently Asked Questions
-          </h2>
+        {/* FAQ */}
+        <section id="faq" className="mt-8">
+          <h2 className="text-2xl font-bold text-center mb-6">FREQUENTLY ASKED QUESTION</h2>
           <div className="space-y-4">
-            <details className="p-4 rounded bg-[#F2EDE5]">
-              <summary className="cursor-pointer font-bold">
-                What is Bali Building Simulator?
-              </summary>
-              <p className="mt-2 text-gray-600">
-                Bali Building Simulator is a tool designed to help you create
-                traditional Balinese house designs.
-              </p>
-            </details>
-            <details className="p-4 rounded bg-[#F2EDE5]">
-              <summary className="cursor-pointer font-bold">
-                What features are offered on the Bali Building Simulator
-                website?
-              </summary>
-              <p className="mt-2 text-gray-600">
-                The Bali Building Simulator website provides two main features.
-                First, the Location of Yard Door feature, which provides
-                recommendations for the location of yard doors along with their
-                philosophy based on the Asta Kosala Kosali principle. Second,
-                the Building Layout feature, which provides recommendations for
-                the layout of Balinese buildings and the distance between
-                buildings in a yard according to the Asta Kosala Kosali
-                principle.
-              </p>
-            </details>
-            <details className="p-4 rounded bg-[#F2EDE5]">
-              <summary className="cursor-pointer font-bold">
-                Are the designs downloadable?
-              </summary>
-              <p className="mt-2 text-gray-600">
-                Yes, you can save your design in PNG format.
-              </p>
-            </details>
+            {Array(4)
+              .fill(0)
+              .map((_, i) => (
+                <details
+                  key={i}
+                  className="bg-[#F5C17C] text-[#313130] px-6 py-4 rounded-md cursor-pointer"
+                >
+                  <summary className="font-semibold flex justify-between items-center">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    <span className="text-xl">▾</span>
+                  </summary>
+                  <p className="mt-2 text-sm text-[#5A5A5A]">
+                    Ini adalah jawaban dari pertanyaan yang sering diajukan. Kamu bisa menyesuaikan isinya nanti.
+                  </p>
+                </details>
+              ))}
           </div>
         </section>
       </main>
 
-      <footer className="px-8 py-4 bg-gray-100 flex justify-between items-center">
-        <p className="text-gray-600">&copy; 2024 ASTA KOSALA KOSALI</p>
-        <a
+      {/* Footer */}
+      <footer className="px-12 py-6 bg-[#F2EDE5] flex justify-between items-center">
+        <p className="text-[#5A5A5A] text-sm">&copy; 2025 ASTA KOSALA KOSALI</p>
+        {/* <a
           href="/simulator"
-          className="px-4 py-2 bg-primary text-white rounded"
+          className="px-5 py-2 bg-[#6C483A] text-white rounded-md font-medium hover:bg-[#573b2f] transition"
         >
-          Try Now!
-        </a>
+          COBA SEKARANG!
+        </a> */}
       </footer>
     </div>
   );
