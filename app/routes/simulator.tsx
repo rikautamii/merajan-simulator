@@ -276,14 +276,17 @@ export default function Simulator() {
                 </svg>
                 {loading ? "Memproses..." : "MULAI"}
               </button>
-
-              {image && (
+              
+              <div className="bg-white">
+                {image && (
                 <img
                   className="col-span-2 mt-4"
                   src={image}
                   alt="Tata Letak Bangunan Bali"
                 />
               )}
+              </div>
+              
 
             </div>
           </form>
