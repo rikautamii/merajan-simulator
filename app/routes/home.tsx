@@ -36,11 +36,7 @@ export default function Home() {
           <div className="md:w-1/2 text-[#313130] text-justify">
             <h3 className="text-xl font-bold mb-2 text-center md:text-left">TENTANG</h3>
             <p className="text-base leading-relaxed">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-              in culpa qui officia deserunt mollit anim id est laborum."
+              "Merajan Simulator adalah aplikasi berbasis web yang dirancang untuk membantu masyarakat Bali dalam merancang tata letak sanggah atau merajan sesuai dengan prinsip Asta Kosala Kosali. Dengan menggabungkan kearifan lokal dan teknologi, simulator ini memungkinkan pengguna untuk menentukan posisi pelinggih secara digital berdasarkan arah hadap, ukuran tapak, dan jenis sanggah yang diinginkan. Tujuan dari aplikasi ini adalah untuk mempermudah pemahaman dan pelestarian tata ruang suci keluarga Bali, sekaligus memberikan visualisasi yang akurat dan sesuai kaidah tradisional."
             </p>
           </div>
         </section>
@@ -49,22 +45,51 @@ export default function Home() {
         <section id="faq" className="mt-8">
           <h2 className="text-2xl font-bold text-center mb-6">FREQUENTLY ASKED QUESTION</h2>
           <div className="space-y-4">
-            {Array(4)
-              .fill(0)
-              .map((_, i) => (
-                <details
-                  key={i}
-                  className="bg-[#F5C17C] text-[#313130] px-6 py-4 rounded-md cursor-pointer"
-                >
-                  <summary className="font-semibold flex justify-between items-center">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    <span className="text-xl">▾</span>
-                  </summary>
-                  <p className="mt-2 text-sm text-[#5A5A5A]">
-                    Ini adalah jawaban dari pertanyaan yang sering diajukan. Kamu bisa menyesuaikan isinya nanti.
-                  </p>
-                </details>
-              ))}
+
+            <details className="bg-[#F5C17C] text-[#313130] px-6 py-4 rounded-md cursor-pointer">
+              <summary className="font-semibold flex justify-between items-center">
+                Apa itu Merajan Simulator?
+                <span className="text-xl">▾</span>
+              </summary>
+              <p className="mt-2 text-sm text-[#5A5A5A]">
+                Merajan Simulator adalah aplikasi berbasis web yang membantu pengguna merancang tata letak sanggah (merajan)
+                sesuai dengan prinsip tradisional Asta Kosala Kosali. Simulator ini memberikan visualisasi penempatan pelinggih
+                berdasarkan ukuran lahan dan ukuran tubuh pemilik lahan.
+              </p>
+            </details>
+
+            <details className="bg-[#F5C17C] text-[#313130] px-6 py-4 rounded-md cursor-pointer">
+              <summary className="font-semibold flex justify-between items-center">
+                Apakah saya harus memahami Asta Kosala Kosali sebelum menggunakan simulator ini?
+                <span className="text-xl">▾</span>
+              </summary>
+              <p className="mt-2 text-sm text-[#5A5A5A]">
+                Tidak. Sistem sudah mengatur aturan adat secara otomatis, sehingga dapat digunakan oleh siapa saja.
+              </p>
+            </details>
+
+            <details className="bg-[#F5C17C] text-[#313130] px-6 py-4 rounded-md cursor-pointer">
+              <summary className="font-semibold flex justify-between items-center">
+                Apakah hasilnya sesuai dengan adat Bali?
+                <span className="text-xl">▾</span>
+              </summary>
+              <p className="mt-2 text-sm text-[#5A5A5A]">
+                Ya, simulator mengikuti prinsip Asta Kosala Kosali dan masukan tokoh adat. Namun, hasil ini berlaku untuk rumah
+                pertama dan rumah permanen yang akan ditempati. Untuk pembangunan nyata, tetap disarankan konsultasi dengan
+                pemangku atau undagi.
+              </p>
+            </details>
+
+            <details className="bg-[#F5C17C] text-[#313130] px-6 py-4 rounded-md cursor-pointer">
+              <summary className="font-semibold flex justify-between items-center">
+                Apakah saya bisa menyimpan atau mencetak hasil tata letak sanggah?
+                <span className="text-xl">▾</span>
+              </summary>
+              <p className="mt-2 text-sm text-[#5A5A5A]">
+                Saat ini fitur penyimpanan dan cetak belum tersedia, namun sedang dalam tahap pengembangan. Untuk sementara, pengguna dapat melakukan tangkapan layar (screenshot) hasil tata letak untuk disimpan secara manual.
+              </p>
+            </details>
+
           </div>
         </section>
       </main>
