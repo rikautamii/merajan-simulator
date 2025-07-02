@@ -36,7 +36,7 @@ export default function Home() {
           <div className="md:w-1/2 text-[#313130] text-justify">
             <h3 className="text-xl font-bold mb-2 text-center md:text-left">TENTANG</h3>
             <p className="text-base leading-relaxed">
-              "Merajan Simulator adalah aplikasi berbasis web yang dirancang untuk membantu masyarakat Bali dalam merancang tata letak sanggah atau merajan sesuai dengan prinsip Asta Kosala Kosali. Dengan menggabungkan kearifan lokal dan teknologi, simulator ini memungkinkan pengguna untuk menentukan posisi pelinggih secara digital berdasarkan arah hadap, ukuran tapak, dan jenis sanggah yang diinginkan. Tujuan dari aplikasi ini adalah untuk mempermudah pemahaman dan pelestarian tata ruang suci keluarga Bali, sekaligus memberikan visualisasi yang akurat dan sesuai kaidah tradisional."
+              Merajan Simulator adalah aplikasi berbasis web yang dirancang untuk membantu masyarakat Bali dalam merancang tata letak sanggah atau merajan sesuai dengan prinsip Asta Kosala Kosali. Dengan menggabungkan kearifan lokal dan teknologi, simulator ini memungkinkan pengguna untuk menentukan posisi pelinggih secara digital berdasarkan arah hadap, ukuran tapak, dan jenis sanggah yang diinginkan. Tujuan dari aplikasi ini adalah untuk mempermudah pemahaman dan pelestarian tata ruang suci keluarga Bali, sekaligus memberikan visualisasi yang akurat dan sesuai kaidah tradisional.
             </p>
           </div>
         </section>
