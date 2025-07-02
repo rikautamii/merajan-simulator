@@ -57,8 +57,8 @@ export default function Simulator() {
 
     if (["satu", "dua", "tiga", "empat", "lima"].includes(sanggah) && 
       ((panjang < 6 && lebar < 7) ||
-      (panjang < 7 && lebar < 6)) ||
-      (panjang === lebar)) {
+      (panjang < 7 && lebar < 6) ||
+      (panjang === lebar))) {
       Swal.fire({
         icon: "warning",
         title: "Ukuran Lahan Tidak Sesuai!",
